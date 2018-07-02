@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-actions">
+        <form>
+            <table cellpadding = "5" cellspacing ="10">
+                <tr class="control-group">
+                    <td style="width: 100px;">
+                        <div>Name:&nbsp;<font color="red">(*)</font></div>
+                    </td>
+                    <td>
+                        <input type="text" id="inputName" placeholder="Name" required>
+                    </td>
+                </tr>
+                <tr class="control-group">
+                    <td>
+                        <div>Email:&nbsp;<font color="red">(*)</font></div>
+                    </td>
+                    <td>
+                        <input class="span3" placeholder="user@gmail.com" id= "inputEmail" type="email" required>
+                    </td>
+                </tr>
+                <tr class="control-group">
+                    <td>
+                        <div>Phone:&nbsp;</div>
+                    </td>
+                    <td>
+                        <input type="text" id="inputPhone" placeholder="phone number">
+                    </td>
+                </tr>
+                <tr class="control-group">
+                    <td>
+                        <div>Subject:&nbsp;<font color="red">(*)</font></div>
+                    </td>
+                    <td>
+                        <input type="text" id="inputSubject" placeholder="Subject" required>
+                    </td>
+                </tr>
+                <tr class="control-group">
+                    <td colspan ="2">
+                        <div>
+                            <div>Detail:&nbsp;</div>
+                            <div class="controls">
+                                <textarea id="inputDetail"></textarea>
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <label style="font-weight: bold;" class="checkbox"> <input id="confirmCheck" value="" type="checkbox">
+                                I Agree to the Personal information handling policy
+                        </label>
+                    </div>
+                    <div id = "alert_placeholder"></div>
+                        <div class="acceptment">
+                            [Personal information handling policy]<br> <br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div align="center">
+                            <button id="btnConfirm" class="btn btn-primary">Confirm</button>
+                            <input type="reset" style="width: 65px; height: 27px;" id="btnReset" class="btn">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="sample.js"></script>
+</body>
+</html>
